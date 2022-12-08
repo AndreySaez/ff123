@@ -1,4 +1,5 @@
-fun main(args: Array<String>) {
-    println("Hello World!")
-
+fun main() {
+    harryPotter.getType()
+    gameOfThrones.getType()
+    time.getType()
 }
