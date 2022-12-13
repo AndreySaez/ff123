@@ -6,4 +6,14 @@ class Book(override val wordCount: Int, override val price: Int) : Publication {
 
     }
 
+     // Задание 2
+    override fun equals(other: Any?): Boolean {
+        if (other is Book) {
+            return (wordCount == other.wordCount) && (price == other.price)
+
+        }
+        return false
+    }
 }
+
+
