@@ -4,9 +4,10 @@ fun main() {
     val harryPotter = Book(10000, 50)
     val gameOfThrones = Book(7000, 60)
 
-    getType(gameOfThrones)
-    getType(harryPotter)
-    getType(time)
+    printInfo(gameOfThrones)
+    printInfo(harryPotter)
+    printInfo(time)
+
 
     // Задание 2
     println(harryPotter === gameOfThrones)
@@ -22,8 +23,8 @@ fun main() {
     var b = sum(2, 3)
 }
 
-// Задане 1
-fun getType(paper: Publication) {
+ // Задане 1
+fun printInfo(paper: Publication) {
     println("type: ${(paper.getType())}, wordCount: ${paper.wordCount}, price: ${paper.price}")
 }
 
